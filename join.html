@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Foursquare In Nigeria.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <h1>Join Us at Our Church!</h1>
+    <p>We would love to welcome you to our congregation. Please fill out the form below to receive more information about our services and community events.</p>
+
+    <form action="#" method="post" id="church-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Questions or Comments</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send Message/Join Us</button>
+        <a href="home.html" class="back-button">Back to Home</a>
+    </form>
+
+    <script>
+        document.getElementById('church-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+            // Access the entered data using the input elements' IDs
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Display a personalized automated message in an alert box
+            const message = `Thank you, ${name}! We have received your submission. Your email is ${email}.`;
+            alert(message);
+        });
+    </script>
+</body>
+</html>

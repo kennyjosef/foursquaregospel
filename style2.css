@@ -1,0 +1,12 @@
+.form{
+    height: 16pc;
+    width: 40%;
+ margin-left:15pc ;
+ margin-top: 5pc;
+}
+body{
+  background-image: url('Images/OIP.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

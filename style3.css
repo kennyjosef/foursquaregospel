@@ -1,0 +1,17 @@
+.mySlides{
+  height: 280px;
+  width: 90%;
+}
+body{
+  background-size: 100% 100%;
+  width: 50%;
+}
+ul li{
+  margin-left: 20px;
+}
+header{
+  margin-left: 20px;
+}
+.Jesus{
+margin-left: 50%;
+}
